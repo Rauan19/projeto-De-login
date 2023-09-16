@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<style>
+    body{
+        background-image: linear-gradient(to right, rgba(11, 11, 46, 0.975), rgba(21, 48, 77, 0.97), rgb(43, 58, 136));
+        display: flex;
+    
+    
+
+    }
+    div{font-family: Arial, Helvetica, sans-serif;
+        color: rgba(45, 205, 195, 0.668);
+        background-color: rgba(28, 39, 45, 0.93);
+        position: absolute;
+        border-radius: 35px 35px 35px 35px;
+        top: 28%;
+        left: 35%;
+        padding: 22px;
+        padding-left: 5%;
+        padding-top: 4%;
+        width: 298px;
+        
+        
+    
+    }
+    input{border-radius: 7px;
+    width: 270px;
+    padding: 5px;
+    background-color: rgba(169, 169, 169, 0.147);
+}
+    button{background-color: rgba(93, 110, 207, 0.132);
+           border-radius: 9px;
+           color: rgba(45,205,195,0.668);
+           padding: 7px;
+           width: 160px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           left: 50px;
+           position: relative;
+        
+        }
+    a{left: 20px;
+        
+        color: rgba(57, 124, 218, 0.759);
+        position: relative;
+        left: 53px;
+    
+    }
+    .btt{
+        
+        position: relative;
+        padding: 5px;
+
+    }
+    button:hover{
+        background-color: rgba(169, 169, 169, 0.377);
+    }
+    .loading{width: 40px;
+        height: 40px;
+        background-color: rgba(39, 97, 172, 0.705);
+        border-radius: 2px ;
+        left: 80px;
+        top: 30%;
+        padding: 18px;
+        animation: exemple 5s infinite alternate;
+    }
+    .quadrado1{left: 100px;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(37, 117, 222, 0.911);
+        border-radius: 5px;
+        padding: 18px;
+        left: 70%;
+        top: 50%;
+        animation: exemple 5s infinite alternate;
+    }
+    .quadrado2{
+        width: 40px;
+        height: 40px;
+        background-color: rgba(39, 97, 172, 0.815);
+        border-radius: 5px;
+        padding: 18px;
+        left: 25%;
+        top: 55%;
+        animation: exemple 5s infinite alternate;
+    }
+    .quadrado5{width: 40px;
+        height: 40px;
+        padding: 18px;
+        border-radius: 5px;
+        background-color: rgb(54, 92, 176);
+        left: 85%;
+        top: 70%;
+        animation: exemple 5s infinite alternate;
+
+    } 
+    .box{
+        box-shadow: 5px 5px rgba(72, 124, 126, 0.684);
+    }  
+
+
+    
+      @keyframes exemple {
+        0% {
+            transform: rotate(0deg);
+        }
+        25% {
+            transform: rotate(45deg);
+        }
+        50% {
+            transform: rotate(90deg);
+            opacity: 0;
+        }
+        75% {
+            transform: rotate(135deg);
+        }
+        100% {
+            transform: rotate(180deg);
+        }
+    }
+    .border-top{
+        position: absolute;
+        padding: 30px;
+        width: 100px;
+        background-color: rgba(72, 110, 153, 0.404);
+        left: -3px;
+        top: 28%;
+        padding-right: 34%;
+        padding-bottom: 60%;
+        border-radius: 20px 55% 55% 20px;
+        background-image: linear-gradient(to right, rgba(43, 73, 164, 0.579) rgb(48, 131, 203));
+        animation: animate-border-top 4s linear infinite;
+    
+    }
+    @keyframes animate-border-top{
+        0%{
+            transform: translateX(-100%);
+        }
+        100%{
+            transform: rotateX(100%);
+            opacity: 0;
+        }
+    }
+    
+</style>
+<body>
+    <div class="rau">
+        <h1></h1>
+        <span class="border-top"></span>
+        <span class="border-right"></span>
+        <span class="border-bottom">
+        <span class="border-left"></span>
+    </div>
+    <div class="quadrado4">7</div>
+    <div class="quadrado5"></div>
+    <div class="quadrado2"></div>
+    <div class="quadrado1"></div>
+    <div class="loading"></div>
+    <div class="box">
+        <h1>Login</h1>
+        <input type="email" name="email" id="01" placeholder="Email">
+        <br><br>
+        <input type="password" name="" id="" placeholder="Senha">
+        <br><br>
+        <button><abbr title="clique para entrar">Entrar</abbr></button>
+        <br>
+        <button><abbr title="Se cadastre aqui" class="btt">Cadastrar</abbr></button>
+        <p><a href=""><abbr title="Recuperar senha">Esqueceu a senha?</abbr></a></p>
+    
+    </div>
+
+    
+</body>
+</html>
